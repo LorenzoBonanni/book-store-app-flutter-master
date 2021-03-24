@@ -11,7 +11,12 @@ class BookDescriptionTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: Show us your Flutter skills!
-    return Container(height: 300, color: Colors.red);
+    return Container(
+      child: Text(
+        book.description,
+        style: Theme.of(context).textTheme.bodyText2,
+      ),
+      margin: const EdgeInsets.only(left: 28.0, right: 28.0, top: 24),
+    );
   }
 }
